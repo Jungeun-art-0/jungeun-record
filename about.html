@@ -1,15 +1,37 @@
-<section id="about-section">
-  <div class="about-container">
-    <div class="about-text">
-      <div contenteditable="true" id="about-bio">자기소개를 여기에 입력하세요.</div>
-      <div class="contact-info">
-        <p>Instagram: <a href="https://instagram.com/" id="insta-link" target="_blank">@yourhandle</a></p>
-        <p>Email: <a href="mailto:your@email.com" id="email-link">your@email.com</a></p>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Jungeun</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo" onclick="goHome()">Jungeun</div>
+    <div class="nav">
+      <a href="work.html">Work</a>
+      <a href="about.html" class="active">About</a>
+      <a href="exhibition.html">Exhibition</a>
     </div>
-    <div class="about-image">
-      <img id="about-img" src="" alt="Profile Image">
-      <button onclick="uploadAboutImage()">사진 변경</button>
+  </header>
+
+  <main class="about-section">
+    <div class="about-text" contenteditable="true"></div>
+    <div class="about-image-box">
+      <img src="assets/about.jpg" id="about-image" />
+      <input type="file" id="about-image-upload" class="admin-only" />
     </div>
-  </div>
-</section>
+  </main>
+
+  <footer class="footer">
+    <div class="contact" contenteditable="true">
+      Instagram: @yourhandle<br>
+      Email: your@email.com
+    </div>
+    <div class="scroll-up" onclick="scrollToTop()">↑</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
