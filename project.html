@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Project Detail - Jungeun</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="site-title" onclick="goHome()">Jungeun</div>
-    <nav class="site-nav">
-      <a href="work.html" class="nav-link">Work</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="exhibition.html" class="nav-link">Exhibition</a>
-    </nav>
-  </header>
+<section id="project-section">
+  <div class="project-content" id="project-content">
+    <!-- 콘텐츠가 여기에 추가됨 -->
+  </div>
 
-  <main class="project-detail" contenteditable="true">
-    <h2>Project Title</h2>
-    <img src="assets/project-detail.jpg" alt="Detailed Work" />
-    <p>Description of the project. You can write about the concept, material, or story behind the work here.</p>
-  </main>
+  <button id="add-item-btn" onclick="addProjectItem()">+ 추가</button>
 
-  <footer class="contact-footer">
-    <div class="project-nav">
-      <a href="#" class="nav-prev">← Previous Project</a>
-      <a href="#" class="nav-next">Next Project →</a>
-    </div>
-    <div class="scroll-top" onclick="scrollToTop()">↑</div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="project-navigation">
+    <button onclick="navigateProject(-1)">← Previous Project</button>
+    <button onclick="navigateProject(1)">Next Project →</button>
+  </div>
+</section>
