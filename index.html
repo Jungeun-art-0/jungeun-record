@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>Jungeun Portfolio</title>
+  <meta charset="UTF-8">
+  <title>정은 레코드</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-title" onclick="goHome()">Jungeun</div>
-    <nav class="site-nav">
-      <a href="work.html" class="nav-link">Work</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="exhibition.html" class="nav-link">Exhibition</a>
+  <header>
+    <div class="site-name" onclick="goHome()">Jungeun</div>
+    <div class="site-title" contenteditable="true">나의 기록</div>
+    <nav>
+      <a href="#" onclick="navigateTo('work')">Work</a>
+      <a href="#" onclick="navigateTo('about')">About</a>
+      <a href="#" onclick="navigateTo('exhibition')">Exhibition</a>
     </nav>
   </header>
 
-  <main class="hero">
-    <div class="headline" contenteditable="true">Write your headline here</div>
-    <div class="hero-image-container">
-      <img src="assets/placeholder.jpg" alt="Main Image" class="hero-image" />
-    </div>
+  <main id="main-content">
+    <section id="home-section">
+      <div class="editable-image" onclick="uploadImage(this)">
+        <span class="upload-hint">홈 이미지 클릭하여 업로드</span>
+      </div>
+      <div class="contact">
+        <p contenteditable="true">연락처: example@email.com<br/>Instagram: @jung.eun</p>
+      </div>
+    </section>
   </main>
 
-  <footer class="contact-footer">
-    <div class="contact-info">
-      <p contenteditable="true">Email: your@email.com</p>
-      <p contenteditable="true">Instagram: @yourhandle</p>
-    </div>
-    <div class="scroll-top" onclick="scrollToTop()">↑</div>
-  </footer>
+  <div class="scroll-top" onclick="scrollToTop()">↑</div>
 
   <script src="script.js"></script>
 </body>
