@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exhibition - Jungeun</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-title" onclick="goHome()">Jungeun</div>
+    <nav class="site-nav">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="exhibition.html" class="nav-link active">Exhibition</a>
+    </nav>
+  </header>
+
+  <main class="exhibition-content">
+    <aside class="exhibition-years" contenteditable="true">
+      <p>2023</p>
+      <p>2024</p>
+      <p>2025</p>
+    </aside>
+    <section class="exhibition-gallery">
+      <div class="poster" contenteditable="true">
+        <img src="assets/exhibit1.jpg" alt="Exhibition Poster" />
+        <p>Exhibition Title</p>
+      </div>
+      <div class="poster" contenteditable="true">
+        <img src="assets/exhibit2.jpg" alt="Exhibition Poster" />
+        <p>Exhibition Title</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact-footer">
+    <div class="scroll-top" onclick="scrollToTop()">↑</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
