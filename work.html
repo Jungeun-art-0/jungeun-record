@@ -1,8 +1,25 @@
-<section id="work-section">
-  <div id="work-grid"></div>
-  <div class="pagination">
-    <button onclick="prevPage()">←</button>
-    <span id="page-num">1</span>
-    <button onclick="nextPage()">→</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Work Detail</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="detail-container" id="detail-container"></div>
+
+  <div class="admin-only center">
+    <button onclick="addDetailText()">+ Text</button>
+    <button onclick="addDetailImage()">+ Image</button>
   </div>
-</section>
+
+  <div class="nav-buttons">
+    <button onclick="goPrev()">← Previous Project</button>
+    <button onclick="goNext()">Next Project →</button>
+  </div>
+
+  <div class="scroll-up" onclick="scrollToTop()">↑</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
