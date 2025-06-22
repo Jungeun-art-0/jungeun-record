@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Work - Jungeun</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo" onclick="goHome()">Jungeun</div>
+    <div class="nav">
+      <a href="work.html" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="exhibition.html">Exhibition</a>
+    </div>
+  </header>
+
+  <main>
+    <div id="work-gallery" class="gallery"></div>
+
+    <div class="admin-only center">
+      <button onclick="addWorkItem()">+ Add Work</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="scroll-up" onclick="scrollToTop()">↑</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
