@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jungeun Portfolio</title>
+  <title>Jungeun</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo" onclick="goHome()">Jungeun</div>
-    <div class="center-title" contenteditable="true">Your Headline Here</div>
-    <nav class="nav">
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="exhibition.html">Exhibition</a>
+
+  <!-- 상단 메뉴 -->
+  <header>
+    <div class="header-left" onclick="goHome()">Jungeun</div>
+    <div class="header-center" contenteditable="true" data-key="homeHeader">Insert Your Title Here</div>
+    <nav class="header-right">
+      <a href="work.html" class="menu-link">Work</a>
+      <a href="about.html" class="menu-link">About</a>
+      <a href="exhibition.html" class="menu-link">Exhibition</a>
     </nav>
   </header>
 
-  <main class="main-image-area">
-    <img src="assets/default.jpg" id="main-image" />
-    <input type="file" id="main-image-upload" class="admin-only" />
-  </main>
+  <!-- 중앙 이미지 -->
+  <section class="main-image-container">
+    <img id="mainImage" src="assets/main-image.jpg" alt="Main" />
+    <input type="file" id="mainImageUpload" style="display: none" accept="image/*" />
+  </section>
 
-  <footer class="footer">
-    <div class="contact" contenteditable="true">
-      Instagram: @yourhandle<br>
+  <!-- 연락처 -->
+  <section class="contact">
+    <div class="contact-left" contenteditable="true" data-key="contactInfo">
+      Instagram: @your_instagram<br>
       Email: your@email.com
     </div>
-    <div class="scroll-up" onclick="scrollToTop()">↑</div>
-  </footer>
+  </section>
+
+  <!-- 스크롤 탑 버튼 -->
+  <div class="scroll-top" onclick="scrollToTop()">↑</div>
 
   <script src="script.js"></script>
 </body>
