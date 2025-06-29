@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exhibition - Jungeun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 좌측 연도 리스트 -->
+  <aside class="year-nav">
+    <div class="year-item editable-year selected">2024</div>
+    <div class="year-item editable-year">2023</div>
+    <!-- 연도 추가/삭제 버튼 (관리자 전용) -->
+    <button class="admin-only year-add">+ 연도 추가</button>
+  </aside>
 
+  <!-- 우측 전시 썸네일 영역 -->
+  <section class="exhibition-gallery" id="exhibition-gallery">
+    <!-- 예시 썸네일 -->
+    <div class="exhibition-item">
+      <img src="assets/example-poster.jpg" class="editable-image" />
+      <div class="exhibition-title editable-text">전시 제목</div>
+    </div>
+    <!-- 관리자용 전시 추가 버튼 -->
+    <button class="admin-only exhibition-add">+ 전시 추가</button>
+  </section>
+
+  <!-- 하단 우측 스크롤 상단 이동 -->
+  <div class="scroll-top" onclick="scrollToTop()">↑</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
