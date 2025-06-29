@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Exhibition Detail</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="detail-container" id="exhibition-detail-container"></div>
+  <main class="project-detail">
+    <!-- 전시 포스터 -->
+    <img src="assets/example-poster.jpg" class="editable-image" />
 
-  <div class="admin-only center">
-    <button onclick="addExhibitionText()">+ Text</button>
-    <button onclick="addExhibitionImage()">+ Image</button>
-  </div>
+    <!-- 전시 설명 텍스트 -->
+    <div class="editable-text">
+      여기에 전시 설명을 입력하세요.
+    </div>
 
-  <div class="scroll-up" onclick="scrollToTop()">↑</div>
+    <!-- 콘텐츠 추가 버튼 (관리자 전용) -->
+    <div class="admin-only add-block">
+      <button onclick="addContentBlock()">+ 콘텐츠 추가</button>
+    </div>
+
+    <!-- 콘텐츠 블록들이 추가되는 영역 -->
+    <div id="content-container"></div>
+
+    <!-- 이전/다음 프로젝트 이동 -->
+    <div class="project-nav">
+      <a href="#" class="prev-project">← Previous Project</a>
+      <a href="#" class="next-project">Next Project →</a>
+    </div>
+  </main>
+
+  <!-- 맨 아래 스크롤 업 버튼 -->
+  <div class="scroll-top" onclick="scrollToTop()">↑</div>
 
   <script src="script.js"></script>
 </body>
