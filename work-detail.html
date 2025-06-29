@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Work Detail</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Detail - Jungeun</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="detail-container" id="detail-container"></div>
 
-  <div class="admin-only center">
-    <button onclick="addDetailText()">+ Text</button>
-    <button onclick="addDetailImage()">+ Image</button>
-  </div>
+  <!-- 작품 상세 컨텐츠 -->
+  <section class="detail-page">
+    <div class="detail-content" id="detail-content-container">
+      <!-- 콘텐츠 블록들이 script.js에서 자동으로 삽입됨 -->
+    </div>
+  </section>
 
-  <div class="nav-buttons">
-    <button onclick="goPrev()">← Previous Project</button>
-    <button onclick="goNext()">Next Project →</button>
-  </div>
+  <!-- 관리자 전용 콘텐츠 추가 버튼 -->
+  <button id="add-detail-content" class="add-content-button admin-only">
+    + 추가
+  </button>
 
-  <div class="scroll-up" onclick="scrollToTop()">↑</div>
+  <!-- 상단 이동 화살표 -->
+  <div class="scroll-top" onclick="scrollToTop()">↑</div>
 
   <script src="script.js"></script>
 </body>
