@@ -7,30 +7,40 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo" onclick="goHome()">Jungeun</div>
-    <div class="nav">
-      <a href="work.html">Work</a>
-      <a href="about.html" class="active">About</a>
-      <a href="exhibition.html">Exhibition</a>
-    </div>
+
+  <!-- 상단 메뉴 -->
+  <header>
+    <div class="header-left" onclick="goHome()">Jungeun</div>
+    <div class="header-center">About</div>
+    <nav class="header-right">
+      <a href="work.html" class="menu-link">Work</a>
+      <a href="about.html" class="menu-link selected">About</a>
+      <a href="exhibition.html" class="menu-link">Exhibition</a>
+    </nav>
   </header>
 
-  <main class="about-section">
-    <div class="about-text" contenteditable="true"></div>
-    <div class="about-image-box">
-      <img src="assets/about.jpg" id="about-image" />
-      <input type="file" id="about-image-upload" class="admin-only" />
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-text" contenteditable="true" data-key="aboutText">
+      여기에 자기소개를 입력하세요. <br>
+      예: 나는 서울을 기반으로 활동하는 작가입니다...
     </div>
-  </main>
+    <div class="about-image-container">
+      <img id="aboutImage" src="assets/about-image.jpg" alt="About Image" />
+      <input type="file" id="aboutImageUpload" style="display: none" accept="image/*" />
+    </div>
+  </section>
 
-  <footer class="footer">
-    <div class="contact" contenteditable="true">
-      Instagram: @yourhandle<br>
+  <!-- Contact -->
+  <section class="contact">
+    <div class="contact-left" contenteditable="true" data-key="contactInfo">
+      Instagram: @your_instagram<br>
       Email: your@email.com
     </div>
-    <div class="scroll-up" onclick="scrollToTop()">↑</div>
-  </footer>
+  </section>
+
+  <!-- 스크롤 탑 버튼 -->
+  <div class="scroll-top" onclick="scrollToTop()">↑</div>
 
   <script src="script.js"></script>
 </body>
