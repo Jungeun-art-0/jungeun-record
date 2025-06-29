@@ -2,30 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Work - Jungeun</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo" onclick="goHome()">Jungeun</div>
-    <div class="nav">
-      <a href="work.html" class="active">Work</a>
-      <a href="about.html">About</a>
-      <a href="exhibition.html">Exhibition</a>
-    </div>
+
+  <!-- 상단 메뉴 -->
+  <header>
+    <div class="header-left" onclick="goHome()">Jungeun</div>
+    <div class="header-center">My Works</div>
+    <nav class="header-right">
+      <a href="work.html" class="menu-link selected">Work</a>
+      <a href="about.html" class="menu-link">About</a>
+      <a href="exhibition.html" class="menu-link">Exhibition</a>
+    </nav>
   </header>
 
-  <main>
-    <div id="work-gallery" class="gallery"></div>
+  <!-- 작품 목록 영역 -->
+  <section class="work-gallery" id="workGallery">
+    <!-- 작품 아이템들 자동 삽입 -->
+  </section>
 
-    <div class="admin-only center">
-      <button onclick="addWorkItem()">+ Add Work</button>
-    </div>
-  </main>
+  <!-- 페이지네이션 -->
+  <div class="pagination" id="pagination"></div>
 
-  <footer class="footer">
-    <div class="scroll-up" onclick="scrollToTop()">↑</div>
-  </footer>
+  <!-- 작품 추가 버튼 (관리자 모드) -->
+  <div class="admin-tools" id="workAdminTools">
+    <button onclick="addWorkItem()">+ 작품 추가</button>
+  </div>
+
+  <!-- 스크롤 탑 버튼 -->
+  <div class="scroll-top" onclick="scrollToTop()">↑</div>
 
   <script src="script.js"></script>
 </body>
